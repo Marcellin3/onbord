@@ -14,7 +14,7 @@ export function SiteHeader() {
           href="#accueil"
           className="min-w-0 shrink font-heading text-lg font-bold tracking-tight text-[#0f2744] sm:text-xl lg:w-[220px] lg:text-2xl"
         >
-          Goma Stakepool
+          UJUZI Labs
         </a>
 
         <nav

@@ -43,7 +43,7 @@ export function HeroVisual() {
       {/* Stat cards */}
       <div className="absolute -right-2 top-24 z-20 rounded-2xl border border-white/80 bg-white/95 px-4 py-3 shadow-xl backdrop-blur-sm">
         <p className="text-xs font-medium text-slate-500">Participants</p>
-        <p className="font-heading text-xl font-bold text-primary">100+</p>
+        <p className="font-heading text-xl font-bold text-primary">+1000</p>
       </div>
       <div className="absolute bottom-8 right-0 z-20 rounded-2xl border border-white/80 bg-white/95 px-4 py-3 shadow-xl backdrop-blur-sm">
         <p className="text-xs font-medium text-slate-500">Modules</p>
