@@ -1,6 +1,8 @@
 import { ApplyForm } from "./components/ApplyForm";
 import { HeroVisual } from "./components/HeroVisual";
 import { SiteHeader } from "./components/SiteHeader";
+import Image from "next/image";
+
 
 const missions = [
   {
@@ -169,14 +171,14 @@ export default function Home() {
           <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-10">
             <div className="max-w-xl">
               <span className="inline-flex items-center rounded-full border border-sky-200/80 bg-white/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-primary shadow-sm backdrop-blur-sm sm:text-sm">
-                N°1 — initiation Web3 à Goma
+                Web 3 Onbording Program
               </span>
               <h1 className="mt-6 font-heading text-4xl font-bold leading-[1.1] tracking-tight text-[#0f2744] sm:text-5xl lg:text-[3.25rem]">
-                Votre partenaire pour entrer dans le Web3
+                Votre porte d'entrer dans le Web3
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-slate-600">
                 Formation gratuite d&apos;initiation au Web 3.0 et à la Blockchain pour les jeunes de
-                Goma. Une opportunité unique pour comprendre les technologies de demain et
+                Goma et de la RDC. Une opportunité unique pour comprendre les technologies de demain et
                 rejoindre l&apos;écosystème décentralisé.
               </p>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -200,19 +202,112 @@ export default function Home() {
 
         <WaveDivider />
 
-        {/* Qu'est-ce que c'est */}
-        <section
-          id="programme"
-          className="bg-white px-4 py-16 sm:px-6 lg:px-10 lg:py-24"
-        >
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-heading text-3xl font-bold text-[#0f2744] sm:text-4xl">
-              Qu&apos;est-ce que c&apos;est ?
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-slate-600">
-              Une formation gratuite pour découvrir le Web 3.0 et la Blockchain. Vous apprenez,
-              expérimentez et vous positionnez sur les nouvelles opportunités numériques.
-            </p>
+        {/* C'est quoi Onboarding Program ? */}
+        <section id="programme" className="bg-white px-4 py-16 sm:px-6 lg:px-10 lg:py-24">
+          <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2 lg:gap-14">
+            <div className="max-w-xl">
+              <h2 className="font-heading text-3xl font-bold text-[#0f2744] sm:text-4xl">
+                C&apos;est quoi Onboarding Program ?
+              </h2>
+              <p className="mt-6 text-lg leading-relaxed text-slate-600">
+                Onboarding program est une initiative qui vise à offrir aux jeunes de Goma et de la RDC
+                une formation gratuite et accessible sur les technologies émergentes du Web 3.0 et
+                de la Blockchain. Dans un monde en constante évolution, il est essentiel d&apos;équiper
+                la prochaine génération avec les compétences nécessaires pour naviguer et prospérer
+                dans cet écosystème numérique.
+              </p>
+            </div>
+
+            {/* Collage d'images comme le design */}
+            <div className="relative mx-auto w-full max-w-xl grid grid-row-2 gap-2">
+              {/* Fond à petits points */}
+              <div
+                className="pointer-events-none absolute inset-0 -z-10 rounded-[32px] opacity-60"
+                aria-hidden
+                style={{
+                  backgroundImage:
+                    "radial-gradient(circle at 1px 1px, rgba(17,74,141,0.15) 1px, transparent 0)",
+                  backgroundSize: "18px 18px",
+                }}
+              />
+
+              {/* Mobile : grille simple 2x2 */}
+              <div className="grid grid-row-4 gap-2 lg:hidden">
+                {[
+                  { src: "/Photos/02.jpg", alt: "Image 02" },
+                  { src: "/Photos/03.jpg", alt: "Image 03" },
+                  { src: "/Photos/04.png", alt: "Image 04" },
+                  { src: "/Photos/05.png", alt: "Image 05" },
+                ].map((img) => (
+                  <div
+                    key={img.src}
+                    className="relative aspect-square overflow-hidden rounded-[24px] bg-sky-50 shadow-sm"
+                  >
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      sizes="(max-width: 1024px) 45vw"
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+
+              {/* Desktop : disposition exactement comme ton image */}
+              <div className="relative hidden h-[360px] lg:block">
+                {/* Grande image gauche (02) */}
+                <div className="absolute left-0 top-0 h-[230px] w-[320px] overflow-hidden rounded-[28px] bg-sky-50 shadow-[0_25px_60px_-20px_rgba(17,74,141,0.18)]">
+                  <Image
+                    src="/Photos/02.jpg"
+                    alt="Onboarding en session"
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 320px"
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+
+                {/* Image large en bas à gauche (04) */}
+                <div className="absolute bottom-0 left-[52px] h-[135px] w-[300px] overflow-hidden rounded-[28px] bg-sky-50 shadow-md">
+                  <Image
+                    src="/Photos/04.png"
+                    alt="Jeunes devant un écran"
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 300px"
+                    className="object-cover"
+                  />
+                </div>
+
+                {/* Carré violet en haut à droite */}
+                <div
+                  className="absolute right-0 top-0 h-[86px] w-[86px] rounded-[26px] bg-blue-900 shadow-sm"
+                  aria-hidden
+                />
+
+                {/* Image verticale à droite (03) */}
+                <div className="absolute right-0 top-[96px] h-[200px] w-[200px] overflow-hidden rounded-[28px] bg-sky-50 shadow-md">
+                  <Image
+                    src="/Photos/03.jpg"
+                    alt="Groupe en formation"
+                    fill
+                    sizes="(max-width: 1024px) 40vw, 220px"
+                    className="object-cover"
+                  />
+                </div>
+
+                {/* Petite carte en bas à droite (05) */}
+                <div className="absolute bottom-0 right-[14px] h-[90px] w-[118px] overflow-hidden rounded-[26px] bg-sky-50 shadow-md">
+                  <Image
+                    src="/Photos/05.png"
+                    alt="Scène Web3"
+                    fill
+                    sizes="(max-width: 1024px) 40vw, 160px"
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

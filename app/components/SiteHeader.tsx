@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const navLinks = [
   { href: "#accueil", label: "Accueil" },
   { href: "#programme", label: "Programme" },
@@ -12,9 +14,22 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-10">
         <a
           href="#accueil"
-          className="min-w-0 shrink font-heading text-lg font-bold tracking-tight text-[#0f2744] sm:text-xl lg:w-[220px] lg:text-2xl"
+          className="min-w-0 shrink"
+          aria-label="Goma Stakepool"
         >
-          UJUZI Labs
+          <div className="flex flex-row items-center">
+          <Image
+            src="/Photos/logo.png"
+            alt="Goma Stakepool"
+            width={220}
+            height={70}
+            priority
+            className="h-8 w-auto sm:h-9 lg:h-10"
+          />
+          <p className="font-bold text-2xl text-blue-950">
+            UJUZI Labs
+          </p>
+          </div>
         </a>
 
         <nav
