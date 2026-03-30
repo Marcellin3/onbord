@@ -169,10 +169,10 @@ export default function Home() {
           <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-10">
             <div className="max-w-xl">
               <span className="inline-flex items-center rounded-full border border-sky-200/80 bg-white/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-primary shadow-sm backdrop-blur-sm sm:text-sm">
-                Web 3 Onbording Program
+                N°1 — initiation Web3 à Goma
               </span>
               <h1 className="mt-6 font-heading text-4xl font-bold leading-[1.1] tracking-tight text-[#0f2744] sm:text-5xl lg:text-[3.25rem]">
-                Votre porte d'entrer dans le Web 3
+                Votre partenaire pour entrer dans le Web3
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-slate-600">
                 Formation gratuite d&apos;initiation au Web 3.0 et à la Blockchain pour les jeunes de
@@ -207,7 +207,7 @@ export default function Home() {
         >
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-heading text-3xl font-bold text-[#0f2744] sm:text-4xl">
-            c&apos;est Quoi Onbording Program?
+              Qu&apos;est-ce que c&apos;est ?
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-slate-600">
               Une formation gratuite pour découvrir le Web 3.0 et la Blockchain. Vous apprenez,
@@ -510,9 +510,9 @@ export default function Home() {
       <footer className="bg-[#0a1628] px-4 pb-12 pt-2 text-slate-300 sm:px-6 lg:px-10">
         <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-10">
           <div>
-            <p className="font-heading text-xl font-bold text-white">UJUZI Labs</p>
+            <p className="font-heading text-xl font-bold text-white">Goma Stakepool</p>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
-              Onboarding Program — former la prochaine génération Web3 en RDC et en Afrique.
+              Onboarding Program — former la prochaine génération Web3 à Goma.
             </p>
             <div className="mt-6 flex gap-3">
               {["𝕏", "in", "✈"].map((x, i) => (
@@ -575,12 +575,12 @@ export default function Home() {
             <ul className="mt-4 space-y-3 text-sm">
               <li>
                 <a href="mailto:contact@gomastakepool.example" className="hover:text-white">
-                  contact@ujuzilabs.com
+                  contact@gomastakepool.example
                 </a>
               </li>
               <li>
-                <a href="tel:+243 977024761" className="hover:text-white">
-                  +243 977 024 761
+                <a href="tel:+243000000000" className="hover:text-white">
+                  +243 …
                 </a>
               </li>
               <li className="text-slate-500">Lun — Ven · 9h — 17h</li>
@@ -588,7 +588,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mx-auto mt-14 max-w-6xl border-t border-slate-700/80 pt-8 text-center text-sm text-slate-500">
-          © {new Date().getFullYear()} UJUZI Labs. Tous droits réservés.
+          © {new Date().getFullYear()} Goma Stakepool. Tous droits réservés.
         </div>
       </footer>
     </>
